@@ -1,0 +1,29 @@
+"AddonInfo"
+{
+ 
+	"TeamCount"		"2"
+	"maps"			"main"
+	"IsPlayable"	"1"
+
+	"main"
+	{
+		"MaxPlayers"                    "10"
+	}
+
+	"Default_Keys"
+	{
+		"01"
+		{
+			"Key"		"T"
+		 	"Command" 	"ShowAbilities" // for press and release
+		 	"Name"		"ShowAbilities"
+		}
+		"02"
+		{
+			"Key"		"`"
+		 	"Command" 	"+ShowScoreBoard"
+		 	"Name"		"ShowScoreBoard"
+		}
+	}
+
+}

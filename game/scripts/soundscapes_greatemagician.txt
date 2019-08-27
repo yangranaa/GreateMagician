@@ -1,0 +1,60 @@
+"magic_forst"
+{
+	"dsp"       "0"
+	"fadetime" "3"
+
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"sounds/music/magic_forst.vsnd"
+		"origin"	"-6245.79, -6163.41, 600;"
+		"soundlevel" 	"SNDLVL_NONE"
+	}
+
+}
+
+"ice_temple"
+{
+	"dsp"       "0"
+	"fadetime" "3"
+
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"sounds/music/ice_temple.vsnd"
+		"origin"	"6771, 6720, 600;"
+		"soundlevel" 	"SNDLVL_NONE"
+	}
+}
+
+"ice_mountain"
+{
+	"dsp"       "0"
+	"fadetime" "3"
+
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"sounds/music/ice_mountain.vsnd"
+		"origin"	"-5376, 5184, 960;"
+		"soundlevel" 	"SNDLVL_NONE"
+	}
+}
+
+"magma"
+{
+	"dsp"       "0"
+	"fadetime" "3"
+
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"sounds/music/magma.vsnd"
+		"origin"	"2240, 6272, 128;"
+		"soundlevel" 	"SNDLVL_NONE"
+	}
+}

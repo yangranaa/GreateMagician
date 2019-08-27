@@ -1,0 +1,480 @@
+// Dota2 Editor
+// Get latest version: https://github.com/zombieJ/nw-dota2editor
+
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	"item_fire"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_haste"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"20"
+		"ID"	"1500"
+		"ItemQuality"	"artifact"
+		"ItemDroppable"	"0"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"0"
+		"ItemAlertable"	"0"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/element_comb.lua"
+				"Function"	"element_add"
+				"element"	"fire"
+			}
+		}
+	}
+
+	"item_show_abilities"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_necronomicon_3"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"ID"	"1512"
+		"ItemQuality"	"artifact"
+		"ItemDroppable"	"0"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"0"
+		"ItemAlertable"	"0"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/ui/ui_manager.lua"
+				"Function"	"ui_manager.ShowAbilitiesView"
+			}
+		}
+	}
+
+	"item_water"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"20"
+		"ID"	"1501"
+		"ItemQuality"	"artifact"
+		"ItemDroppable"	"0"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"0"
+		"ItemAlertable"	"0"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/element_comb.lua"
+				"Function"	"element_add"
+				"element"	"water"
+			}
+		}
+	}
+
+	"item_thunder"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_doubledamage"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"20"
+		"ID"	"1502"
+		"ItemQuality"	"artifact"
+		"ItemDroppable"	"0"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"0"
+		"ItemAlertable"	"0"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/element_comb.lua"
+				"Function"	"element_add"
+				"element"	"thunder"
+			}
+		}
+	}
+
+	"item_ground"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_illusion"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"20"
+		"ID"	"1503"
+		"ItemQuality"	"artifact"
+		"ItemDroppable"	"0"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"0"
+		"ItemAlertable"	"0"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/element_comb.lua"
+				"Function"	"element_add"
+				"element"	"ground"
+			}
+		}
+	}
+
+	"item_vapour"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_empty"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"20"
+		"ID"	"1504"
+		"ItemQuality"	"artifact"
+		"ItemDroppable"	"0"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"0"
+		"ItemAlertable"	"0"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/element_comb.lua"
+				"Function"	"element_add"
+				"element"	"vapour"
+			}
+		}
+	}
+
+	"item_natural"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_regeneration"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"20"
+		"ID"	"1505"
+		"ItemQuality"	"artifact"
+		"ItemDroppable"	"0"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"0"
+		"ItemAlertable"	"0"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/element_comb.lua"
+				"Function"	"element_add"
+				"element"	"natural"
+			}
+		}
+	}
+
+	"item_element_fire"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_haste"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"0"
+		"ID"	"1506"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"Model"	"models/props_gameplay/rune_doubledamage01.vmdl"
+		"ItemCost"	"180"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemKillable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/abilities_damage.lua"
+				"Function"	"ability_add_coefficient"
+				"element"	"fire"
+				"elementAddValue"	"20"
+			}
+			"SpendCharge"	{}
+		}
+	}
+
+	"item_element_water"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"0"
+		"ID"	"1507"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"Model"	"models/props_gameplay/rune_doubledamage01.vmdl"
+		"ItemCost"	"180"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemKillable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/abilities_damage.lua"
+				"Function"	"ability_add_coefficient"
+				"element"	"water"
+				"elementAddValue"	"20"
+			}
+			"SpendCharge"	{}
+		}
+	}
+
+	"item_element_thunder"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_doubledamage"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"0"
+		"ID"	"1508"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"Model"	"models/props_gameplay/rune_doubledamage01.vmdl"
+		"ItemCost"	"180"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemKillable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/abilities_damage.lua"
+				"Function"	"ability_add_coefficient"
+				"element"	"thunder"
+				"elementAddValue"	"20"
+			}
+			"SpendCharge"	{}
+		}
+	}
+
+	"item_element_ground"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_illusion"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"0"
+		"ID"	"1509"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"Model"	"models/props_gameplay/rune_doubledamage01.vmdl"
+		"ItemCost"	"180"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemKillable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/abilities_damage.lua"
+				"Function"	"ability_add_coefficient"
+				"element"	"ground"
+				"elementAddValue"	"20"
+			}
+			"SpendCharge"	{}
+		}
+	}
+
+	"item_element_vapour"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_empty"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"0"
+		"ID"	"1510"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"Model"	"models/props_gameplay/rune_doubledamage01.vmdl"
+		"ItemCost"	"180"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemKillable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/abilities_damage.lua"
+				"Function"	"ability_add_coefficient"
+				"element"	"vapour"
+				"elementAddValue"	"20"
+			}
+			"SpendCharge"	{}
+		}
+	}
+
+	"item_element_natural"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bottle_regeneration"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"0"
+		"ID"	"1511"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"Model"	"models/props_gameplay/rune_doubledamage01.vmdl"
+		"ItemCost"	"180"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemKillable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/abilities/abilities_damage.lua"
+				"Function"	"ability_add_coefficient"
+				"element"	"natural"
+				"elementAddValue"	"20"
+			}
+			"SpendCharge"	{}
+		}
+	}
+}
